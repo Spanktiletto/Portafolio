@@ -1,0 +1,111 @@
+@keyframes move {
+    to { 
+      offset-distance: 50%;
+    }
+  }
+@font-face {
+    font-family: roboto;
+    src: url(./Fonts/Roboto-Medium.ttf);
+}
+*{
+    margin: 0 auto;
+}
+body{
+    background: url(./img/bg.gif);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100%;
+    width: 100vh;   
+    display: flex;
+    justify-content: center;
+}
+.container{
+    margin: 0 auto;
+    background-color: rgba(255, 255, 255, 0.4);
+    width: 100%;
+    height: 10vh;
+    position: fixed;
+    display: flex;
+    align-items: center;
+    box-shadow: 0 5px 5px rgba(0, 0, 0, 0.5), 0 1px rgba(255, 255, 255, 0.24);
+    z-index: 5;
+}
+.nav{
+    width: 100%;
+    margin: 0 auto;
+   
+}
+.nav-menu{
+    
+    z-index: 10;
+    list-style: none;
+    display: flex;
+    justify-content:space-between;
+}
+.nav-menu-obj{
+    height:inherit;
+   
+}
+.nav-menu-obj a{
+    padding: 8px 12px;
+    color: rgb(157, 15, 161);
+    box-shadow: 0 3px  rgba(0, 0, 0, 0.1), 0 1px rgba(0, 0, 0, 0);
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 30px;  
+}
+.nav-menu-obj a:hover{
+   
+    background-color: rgba(144, 135, 206, 0.3);
+    box-shadow: 0 3px  rgba(0, 0, 0, 0.5), 0 1px rgba(0, 0, 0, 5);
+    border-radius: 5%;
+    
+  
+}
+.section{
+    
+    height: 70%;
+    width: 90%;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.section-who{
+    margin-top: 10em;
+}
+.datos-who{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.foto{
+    border-radius: 50%;
+    
+    width: 400px;
+    height: 400px;
+}
+
+.moon{
+  
+    width:400px;
+    height:400px;
+    background-color: #d6d6d6;
+    box-shadow: inset -5px 5px rgba(0,0,0,0.2);
+    border-radius:50%;
+    margin-top: -100px;
+    margin-left: -150px;
+    overflow:hidden;
+    offset-path: path("M280.25,191c38.55,0,74.78,5.44,102,15.32C409.18,216.08,424,228.93,424,242.5s-14.82,26.42-41.74,36.18C355,288.56,318.8,294,280.25,294s-74.78-5.44-102-15.32c-26.91-9.76-41.74-22.61-41.74-36.18s14.83-26.42,41.74-36.18c27.24-9.88,63.47-15.32,102-15.32m0-1c-79.95,0-144.76,23.51-144.76,52.5S200.3,295,280.25,295,425,271.49,425,242.5,360.19,190,280.25,190Z");
+    animation: move 5s linear infinite;
+
+}
+
+
+
+.moon:after {
+    top:35px;
+    left:10px;
+}
