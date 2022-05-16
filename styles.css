@@ -10,21 +10,20 @@
 *{
     margin: 0 auto;
 }
+
 body{
-    background: url(./img/bg.gif);
-    background-repeat: no-repeat;
+    background: url(./img/bg.gif) no-repeat center center fixed;
+
     background-size: cover;
-    height: 100%;
-    width: 100vh;   
-    display: flex;
-    justify-content: center;
+    min-width: 100%;
+    min-height: 100%;
 }
 .container{
     margin: 0 auto;
     background-color: rgba(255, 255, 255, 0.4);
     width: 100%;
     height: 10vh;
-    position: fixed;
+    position: relative;
     display: flex;
     align-items: center;
     box-shadow: 0 5px 5px rgba(0, 0, 0, 0.5), 0 1px rgba(255, 255, 255, 0.24);
@@ -62,19 +61,25 @@ body{
     
   
 }
-.section{
-    
-    height: 70%;
-    width: 90%;
+.contenedor-section{
+    min-width: 100%;
+    min-height: 100vh;
+    display: block;
     position: absolute;
-    display: flex;
     justify-content: center;
     align-items: center;
-
+}
+.section{
+    background-color: rgba(0, 0, 0, 0.2);
+    height: 40rem;
+    width: 90%;
+    position: relative;
+    margin-top: 5rem;
+    margin-bottom: 5rem;
 }
 
 .section-who{
-    margin-top: 10em;
+    display: flex;
 }
 .datos-who{
     display: flex;
@@ -83,29 +88,19 @@ body{
 }
 .foto{
     border-radius: 50%;
-    
-    width: 400px;
-    height: 400px;
+    width: 300px;
+    height: 300px;
 }
 
 .moon{
-  
-    width:400px;
-    height:400px;
-    background-color: #d6d6d6;
-    box-shadow: inset -5px 5px rgba(0,0,0,0.2);
+    width:300px;
+    height:300px;
     border-radius:50%;
-    margin-top: -100px;
-    margin-left: -150px;
+    margin-top: -10rem;
+    margin-left: -15rem;
     overflow:hidden;
     offset-path: path("M280.25,191c38.55,0,74.78,5.44,102,15.32C409.18,216.08,424,228.93,424,242.5s-14.82,26.42-41.74,36.18C355,288.56,318.8,294,280.25,294s-74.78-5.44-102-15.32c-26.91-9.76-41.74-22.61-41.74-36.18s14.83-26.42,41.74-36.18c27.24-9.88,63.47-15.32,102-15.32m0-1c-79.95,0-144.76,23.51-144.76,52.5S200.3,295,280.25,295,425,271.49,425,242.5,360.19,190,280.25,190Z");
     animation: move 5s linear infinite;
 
 }
 
-
-
-.moon:after {
-    top:35px;
-    left:10px;
-}
